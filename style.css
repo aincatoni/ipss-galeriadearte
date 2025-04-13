@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  min-height: 50px;
+  padding: 0 20px;
+}
+
+nav #logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+nav #logo a, nav #logo a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+  list-style: none;
+}
+
+
+nav li a:visited, nav li a {
+color: black;
+text-decoration: none;
+font-weight: 700;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li a:hover{
+  color: gray;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero h1 {
+  font-size: 3.5em;
+  margin: 50px 0;
+}
+
+main {
+  width: 95%;
+  margin: 20px auto;
+/*   display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#intro {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.intro__text {
+max-width: 70ch;
+flex: 1;
+}
+
+.intro__text h2 {
+  font-size: 3em;
+  margin: 0 0 20px 0;
+}
+.intro__image{
+  flex: 2;
+}
+.intro__image img {
+width: 100%;
+height: 100%;
+max-height: 450px;
+object-fit: cover;
+object-position: center;
+}
+
+/* Galeria */
+#galeria h2 {
+  font-size: 3em;
+}
+
+.galeria__grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.galeria__grid div {
+  max-height: 300px;
+  min-height: 300px;
+  max-width: 400px;
+  overflow: hidden;
+} 
+
+section .galeria__grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+section .galeria__grid img:hover {
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Contacto */
+#contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#contacto form {
+  width: 100%;
+  margin: 0 auto;
+} 
+
+#contacto form > div {
+  margin: 30px 0;
+}
+
+#contacto form input{
+  width: 100%;
+}
+
+#contacto form textarea {
+  width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
+/* Mediaqueries */
+
+
+@media screen and (max-width: 768px) {
+  .galeria__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  section .galeria__grid img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

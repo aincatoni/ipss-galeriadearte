@@ -4,62 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galeria de Arte | Inicio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Galería de Arte 🖼️</h1>
     <nav>
+      <div id="logo"><a href="index.html">GDO</a></div>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="galeria.html">Galeria de arte</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <div id="hero">
+      <h1>Galería de Arte Online 🖼️</h1>
+    </div>
   </header>
   <main>
-  <!-- Introducción de la empresa -->
-    <section>
-      <h2>Contáctanos</h2>
-      <form action="">
-        <div>
-          <div>
-            <label for="nombre">
-              Nombre:
-            </label>
-          </div>
-          <input name="nombre" type="text" required>
-        </div>
-        <div>
-          <div>
-            <label for="correo">
-              Email:
-            </label>
-          </div>
-          <input name="correo" type="email" required>
-        </div>
-        <div>
-          <div>
-            <div>
-              <label for="solicitud">
-                Tipo de solicitud:
-              </label>
-            </div>
-          </div>
-          <select name="solicitud" id="" required>
-            <option value="">Selecciona una opción</option>
-            <option value="compra">Compra</option>
-            <option value="consulta">Consulta</option>
-            <option value="venta">Venta</option>
-          </select>
-        </div>
-        <div>
-          <div><label for="mensaje">Mensaje:</label></div>
-          <textarea name="mensaje" id="" required rows="5"></textarea>
-        </div>
-        <div><button type="submit">Enviar</button></div>
-      </form>
+  <!-- Formulario de contacto -->
+  <section id="contacto">
       
-    </section>
+    <h2>Contáctanos</h2>
+    <form action="">
+      <div>
+        <div>
+          <label for="nombre">
+            Nombre:
+          </label>
+        </div>
+        <input name="nombre" type="text" required>
+      </div>
+      <div>
+        <div>
+          <label for="correo">
+            Email:
+          </label>
+        </div>
+        <input name="correo" type="email" required>
+      </div>
+      <div>
+        <div>
+          <div>
+            <label for="solicitud">
+              Tipo de solicitud:
+            </label>
+          </div>
+        </div>
+        <select name="solicitud" id="" required>
+          <option value="">Selecciona una opción</option>
+          <option value="compra">Compra</option>
+          <option value="consulta">Consulta</option>
+          <option value="venta">Venta</option>
+        </select>
+      </div>
+      <div>
+        <div><label for="mensaje">Mensaje:</label></div>
+        <textarea name="mensaje" id="" required></textarea>
+      </div>
+      <div><button type="submit">Enviar</button></div>
+    </form>
+    
+  </section>
   </main>
   <footer>
     Galería de Arte creada con ❤️ por Ain.
