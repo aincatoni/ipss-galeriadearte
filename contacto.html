@@ -55,43 +55,44 @@
   <section id="contacto">
       
     <h2>Contáctanos</h2>
-    <form action="">
-      <div>
-        <div>
-          <label for="nombre">
-            Nombre:
+	<!-- div class de bootstrap para centrar todo -->
+	<div class="container d-flex just-content-center align items-center minvh-100" required>
+	<form class="form-container-fluid text-center" autocomplete="off" >
+      <div class="mb-3 position-relative">
+          <label for="nombre" class="form-label">
           </label>
-        </div>
-        <input name="nombre" type="text" required>
+	<!-- Input type para forma de globo en recuadro de formulario -->
+        <input type="text" class="form-control rounded-pill px-4 py-3" placeholder="Ingrese su nombre"  id="nombre" required>
       </div>
-      <div>
-        <div>
+        <div class="mb-3 position-relative">
           <label for="correo">
-            Email:
           </label>
-        </div>
-        <input name="correo" type="email" required>
+	<!-- Input type para forma de globo en recuadro de formulario -->	  
+		<input type="text" class="form-control rounded-pill px-4 py-3" placeholder="Ingrese su correo"  id="correo" required>     
       </div>
-      <div>
-        <div>
-          <div>
+        <div class="mb-3 position-relative">
             <label for="solicitud">
               Tipo de solicitud:
             </label>
-          </div>
         </div>
-        <select name="solicitud" id="" required>
+	<!-- Input type para forma de globo en recuadro de formulario -->	
+	<div class="mb-3 position-relative">
+		<select name="solicitud" class="form-select rounded-pill px-4 py-3" id="solicitud-select">
           <option value="">Selecciona una opción</option>
           <option value="compra">Compra</option>
           <option value="consulta">Consulta</option>
           <option value="venta">Venta</option>
         </select>
-      </div>
-      <div>
+	</div>
+	<!-- Input type para forma de globo en recuadro de formulario -->
+    <div class="mb-3 position-relative">
         <div><label for="mensaje">Mensaje:</label></div>
-        <textarea name="mensaje" id="" required></textarea>
-      </div>
-      <div><button type="submit">Enviar</button></div>
+	</div>
+		<input type="text" class="form-control rounded-pill px-4 py-3" placeholder="Dejenos su comentario de nuestra pagina"  id="mensaje" required>		
+	<!-- Boton con estilo d-grid gap-2 de boostrap -->
+				<div class="d-grid gap-2">
+				<button class="btn btn-primary" type="button">Enviar</button>			
+	</div>	
     </form>
     
   </section>
