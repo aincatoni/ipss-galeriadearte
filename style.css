@@ -9,7 +9,30 @@ html *, body * {
   padding: 0
 }
 
+/* Fonts */
 
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Colors */
+:root {
+  --pink-500: #d63384;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--pink-500);
+}
 
 body{
   color: rgb(93, 93, 93);
