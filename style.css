@@ -4,14 +4,21 @@
   box-sizing: border-box;
 }
 
+html *, body * {
+  margin: 0;
+  padding: 0
+}
+
+
+
+body{
+  color: rgb(93, 93, 93);
+}
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: whitesmoke;
-  min-height: 50px;
+  min-height: 70px;
   padding: 0 20px;
+  box-shadow: 1px 0px 4px 1px #f6eaf6;
 }
 
 nav #logo {
@@ -22,7 +29,6 @@ nav #logo {
 
 nav #logo a, nav #logo a:visited {
   text-decoration: none;
-  color: black;
 }
 
 
@@ -36,15 +42,14 @@ nav li {
 }
 
 
-nav li a:visited, nav li a {
-color: black;
+nav li a:visited, nav li a, nav a{
+color: #606060ed;
 text-decoration: none;
 font-weight: 700;
 font-family: Arial, Helvetica, sans-serif;
 }
 
 nav li a:hover{
-  color: gray;
 }
 
 #hero {
@@ -53,29 +58,27 @@ nav li a:hover{
   align-items: center;
 }
 #hero h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
+  letter-spacing: 1px;
   margin: 50px 0;
+  max-width: 20ch;
 }
+
+/* .active {
+  color: rgb(89, 59, 255)!important;
+} */
 
 main {
   width: 95%;
-  margin: 20px auto;
-/*   display: flex;
-  justify-content: center;
-  align-items: center; */
+  margin: 0 auto;
 }
 
 #intro {
-  display: flex;
-  gap: 30px;
-  width: 90%;
-  margin: 0 auto;
-  align-items: center;
+  
 }
 
 .intro__text {
-max-width: 70ch;
-flex: 1;
+background-color: #f2f2f2;
 }
 
 .intro__text h2 {
@@ -104,21 +107,26 @@ object-position: center;
   gap: 5px;
 }
 
-.galeria__grid div {
-  max-height: 300px;
+.galeria__images {
+
+}
+
+.galeria__images div {
+  /* max-height: 300px;
   min-height: 300px;
-  max-width: 400px;
+  max-width: 400px; */
   overflow: hidden;
 } 
 
-section .galeria__grid img {
+section .galeria__images img {
   width: 100%;
   height: 100%;
+  max-height: 200px;
   object-fit: cover;
   transition: 0.5s ease-in-out;
 }
 
-section .galeria__grid img:hover {
+section .galeria__images img:hover {
   width: 110%;
   height: 110%;
   object-fit: cover;
