@@ -57,7 +57,7 @@
     <h2>Contáctanos</h2>
 	<!-- div class de bootstrap para centrar todo -->
 	<div class="container d-flex just-content-center align items-center minvh-100" required>
-	<form class="form-container-fluid text-center" autocomplete="off" >
+	<form class="form-container-fluid text-center" autocomplete="off" id="formulario" >
       <div class="mb-3 position-relative">
           <label for="nombre" class="form-label">
           </label>
@@ -91,7 +91,7 @@
 		<input type="text" class="form-control rounded-pill px-4 py-3" placeholder="Dejenos su comentario de nuestra pagina"  id="mensaje" required>		
 	<!-- Boton con estilo d-grid gap-2 de boostrap -->
 				<div class="d-grid gap-2">
-				<button class="btn btn-primary" type="button">Enviar</button>			
+				<button class="btn btn-primary" type="submit">Enviar</button>			
 	</div>	
     </form>
     
@@ -100,8 +100,11 @@
   <footer class="my-5">
     <p>Galería de Arte creada con ❤️ por Ain, Ricardo</p>
   </footer>
-
+  <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+  <!-- JS Propio -->
+   <script src="scripts/validar-obligatorios.js"></script>
 </body>
 </html>

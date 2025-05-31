@@ -194,6 +194,18 @@ footer {
   margin: 10px 0;
 }
 
+/* Modal */
+.galeria-thumb { cursor: pointer; }
+#modalImage { 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s ease-in-out;
+  max-height: 300px; 
+}
+
+
 
 /* Mediaqueries */
 
