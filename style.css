@@ -157,7 +157,15 @@ section .galeria__images img:hover {
 }
 
 
+
 /* Contacto */
+
+#titulo-contactanos {
+
+  margin-top: 100px;
+}
+
+
 #contacto {
   display: flex;
   justify-content: center;
@@ -172,13 +180,6 @@ section .galeria__images img:hover {
   margin: 0 auto;
 } 
 
-#contacto form > div {
-  margin: 30px 0;
-}
-
-#contacto form input{
-  width: 100%;
-}
 
 #contacto form textarea {
   width: 100%;
@@ -235,17 +236,19 @@ body {
 	background: #E5E5E5;
 }
 
-main {
-	max-width: 800px;
-	width: 90%;
-	margin: auto;
-	padding: 40px;
-}
+
 
 .formulario {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+  max-width: 800px;
+	width: 90%;
+	margin: 0 auto;
+	padding: 40px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .formulario__label {
@@ -253,6 +256,11 @@ main {
 	font-weight: 700;
 	padding: 10px;
 	cursor: pointer;
+}
+
+
+.formulario__grupo {
+  min-height: 150px;
 }
 
 .formulario__grupo-input {
